@@ -1,12 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
-import mainContainer from './components/mainContainer';
+import MainContainer from './components/MainConatiner';
 
 function App() {
   return (
    
-      <mainContainer/>
-     
+    
+     <MainContainer/>
     
   );
 }

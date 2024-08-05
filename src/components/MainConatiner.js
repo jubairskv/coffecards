@@ -1,11 +1,11 @@
 import React,{useEffect, useState} from 'react'
 
-const mainContainer = () => {
+const MainContainer = () => {
     const [data,setData] = useState("")
-    
+
     useEffect(()=>{
         ApiData()
-    })
+    },[])
     const ApiData = async() =>{
         const data = await fetch("https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json")
         const json = await data.json()
@@ -17,4 +17,4 @@ const mainContainer = () => {
   )
 }
 
-export default mainContainer
+export default MainContainer
