@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react'
+import bg from "../../src/assets/bg-cafe.jpg"
 
 const MainContainer = () => {
     const [data,setData] = useState("")
@@ -13,7 +14,9 @@ const MainContainer = () => {
         console.log(json)
     }
   return (
-    <div>mainContainer</div>
+    <div >
+      <img className='sm:h-10 lg:h-20 xl:h-60' src={bg} alt='bg_img'/> 
+    </div>
   )
 }
 
