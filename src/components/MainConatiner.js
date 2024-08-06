@@ -23,8 +23,8 @@ const MainContainer = () => {
           src={bg}
           alt="bg_img"
         />
-        <div className=" absolute top-[10%] left-[5%]">
-          <div className="w-[95rem] h-[45rem] text-center rounded-xl text-white p-20 bg-custom-black">
+        <div className=" absolute top-[10%] left-[5%] sm:shrink-0">
+          <div className="w-[500px] h-[45rem] xss:w-[250px] x:w-[300px] xs:w-[450px] sm:w-[560px] md:w-[700px] lg:w-[60rem] xl:w-[75rem] 2xl:w-[80rem]  text-center rounded-xl text-white p-20 bg-custom-black">
             BOX
           </div>
         </div>
