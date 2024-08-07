@@ -47,7 +47,7 @@ const MainContainer = () => {
                 </label>
                 <label className="pl-8">Available Now</label>
               </div>
-              <div className=" flex flex-wrap gap-4 p-4">
+              <div className=" grid grid-cols-3 gap-12 p-4">
                 {data.map((item) => (
                   <div className="pt-20">
                     <div className="relative">
