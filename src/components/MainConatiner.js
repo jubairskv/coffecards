@@ -46,12 +46,22 @@ const MainContainer = () => {
                 <label className="pl-8">Available Now</label>
               </div>
               <div className="pt-20">
-                <img src={datas.image} alt="api-data" className="rounded-xl" />
-                <p>{datas.popular ? "Popular" : ""}</p>
-                <h3>{datas.name}</h3>
-                <p>Price: {datas.price}</p>
-                <p>
-                  Rating: {datas.rating} ({datas.votes} Votes)
+                <div className="relative ">
+                  <img
+                    src={datas.image}
+                    alt="api-data"
+                    className="rounded-xl"
+                  />
+                  <p className="absolute top-0 left-0 text-black bg-yellow-300 p-1 m-2 font-sans font-medium text-sm  rounded-3xl">
+                    {datas.popular ? "Popular" : ""}
+                  </p>
+                </div>
+                <div className="flex justify-between pt-3">
+                  <h3>{datas.name}</h3>
+                  <p className="bg-green-500 rounded-md">{datas.price}</p>
+                </div>
+                <p className="flex font-sans text-md font-medium">
+                  {datas.rating} ({datas.votes} Votes)
                 </p>
               </div>
             </div>
