@@ -47,44 +47,46 @@ const MainContainer = () => {
                 </label>
                 <label className="pl-8">Available Now</label>
               </div>
-              {data.map((item) => (
-                <div className="pt-20">
-                  <div className="relative ">
-                    <img
-                      src={item.image}
-                      alt="api-data"
-                      className="rounded-xl"
-                    />
-                    <p className="absolute top-0 left-0 text-black bg-yellow-300 pl-2 pr-2 p-1 m-2 font-sans font-semibold text-sm rounded-3xl">
-                      {item.popular ? "Popular" : ""}
-                    </p>
+              <div className=" flex flex-wrap gap-4 p-4">
+                {data.map((item) => (
+                  <div className="pt-20">
+                    <div className="relative">
+                      <img
+                        src={item.image}
+                        alt="api-data"
+                        className="rounded-xl"
+                      />
+                      <p className="absolute top-0 left-0 text-black bg-yellow-300 pl-2 pr-2 p-1 m-2 font-sans font-semibold text-sm rounded-3xl">
+                        {item.popular ? "Popular" : ""}
+                      </p>
+                    </div>
+                    <div className="flex justify-between pt-3">
+                      <h3 className="font-sans text-lg font-bold">
+                        {item.name}
+                      </h3>
+                      <p className="bg-color-green rounded-md font-sans text-md text-black font-semibold p-1">
+                        {item.price}
+                      </p>
+                    </div>
+                    <div className="flex pt-2">
+                      <img
+                        src={star}
+                        alt="Rating Icon"
+                        className=" w-6 h-6 mr-2"
+                      />
+                      <p className="flex font-sans text-md font-medium">
+                        {item.rating}
+                      </p>
+                      <p className="flex font-sans text-md font-semibold pl-2 text-color-gray">
+                        ({item.votes} Votes)
+                      </p>
+                      <h3 className="font-sans font-semibold text-sm text-color-red">
+                        {item.available ? "" : "Sold out"}
+                      </h3>
+                    </div>
                   </div>
-                  <div className="flex justify-between pt-3">
-                    <h3 className="font-sans text-lg font-bold">
-                      {item.name}
-                    </h3>
-                    <p className="bg-color-green rounded-md font-sans text-md text-black font-semibold p-1">
-                      {item.price}
-                    </p>
-                  </div>
-                  <div className="flex pt-2">
-                    <img
-                      src={star}
-                      alt="Rating Icon"
-                      className=" w-6 h-6 mr-2"
-                    />
-                    <p className="flex font-sans text-md font-medium">
-                      {item.rating}
-                    </p>
-                    <p className="flex font-sans text-md font-semibold pl-2 text-color-gray">
-                      ({item.votes} Votes)
-                    </p>
-                    <h3 className="font-sans font-semibold text-sm text-color-red">
-                      {item.available ? "" : "Sold out"}
-                    </h3>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
