@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/jubairskv/coffecards/static/css/main.cd3534c9.css",
+    "main.js": "/jubairskv/coffecards/static/js/main.2ca03ee8.js",
+    "static/js/453.51fdbd9f.chunk.js": "/jubairskv/coffecards/static/js/453.51fdbd9f.chunk.js",
+    "static/media/bg-cafe.jpg": "/jubairskv/coffecards/static/media/bg-cafe.ed22aff1614ae837ee21.jpg",
+    "static/media/Star_fill.svg": "/jubairskv/coffecards/static/media/Star_fill.6a3dad060cdb5c863b8fcb3095239b5c.svg",
+    "static/media/Star.svg": "/jubairskv/coffecards/static/media/Star.e6c9605c61e0305626b0348906705ab8.svg",
+    "index.html": "/jubairskv/coffecards/index.html",
+    "static/media/vector.svg": "/jubairskv/coffecards/static/media/vector.3e8bd35dd67de4a16bdd94010d684324.svg",
+    "main.cd3534c9.css.map": "/jubairskv/coffecards/static/css/main.cd3534c9.css.map",
+    "main.2ca03ee8.js.map": "/jubairskv/coffecards/static/js/main.2ca03ee8.js.map",
+    "453.51fdbd9f.chunk.js.map": "/jubairskv/coffecards/static/js/453.51fdbd9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd3534c9.css",
+    "static/js/main.2ca03ee8.js"
+  ]
+}
