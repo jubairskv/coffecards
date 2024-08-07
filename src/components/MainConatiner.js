@@ -47,7 +47,7 @@ const MainContainer = () => {
                 </label>
                 <label className="pl-8">Available Now</label>
               </div>
-              <div className=" grid grid-cols-3 gap-12 p-4">
+              <div className=" grid grid-cols-3 gap-12 p-4 ">
                 {data.map((item) => (
                   <div className="pt-20">
                     <div className="relative">
@@ -57,7 +57,7 @@ const MainContainer = () => {
                         className="rounded-xl"
                       />
                       <p className="absolute top-0 left-0 text-black bg-yellow-300 pl-2 pr-2 p-1 m-2 font-sans font-semibold text-sm rounded-3xl">
-                        {item.popular ? "Popular" : ''}
+                        {item.popular ? "Popular" : ""}
                       </p>
                     </div>
                     <div className="flex justify-between pt-3">
@@ -80,7 +80,7 @@ const MainContainer = () => {
                       <p className="flex font-sans text-md font-semibold pl-2 text-color-gray">
                         ({item.votes} Votes)
                       </p>
-                      <h3 className="font-sans font-semibold text-sm text-color-red">
+                      <h3 className="font-sans font-semibold text-md text-color-red ml-10 mt-1 ">
                         {item.available ? "" : "Sold out"}
                       </h3>
                     </div>
