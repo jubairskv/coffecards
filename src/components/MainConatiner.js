@@ -24,8 +24,22 @@ const MainContainer = () => {
           alt="bg_img"
         />
         <div className=" absolute top-[10%] left-[5%] sm:shrink-0">
-          <div className="w-[500px] h-[45rem] xss:w-[250px] x:w-[300px] xs:w-[450px] sm:w-[560px] md:w-[700px] lg:w-[60rem] xl:w-[75rem] 2xl:w-[80rem]  text-center rounded-xl text-white p-20 bg-custom-black">
-            BOX
+          <div className="w-[500px] h-[45rem] xss:w-[250px] x:w-[300px] xs:w-[420px] sm:w-[560px] md:w-[700px] lg:w-[60rem] xl:w-[75rem] 2xl:w-[95rem]  text-center rounded-xl text-white p-20 bg-custom-black">
+            <div className=" flex flex-col justify-center items-center">
+              <div className="font-sans font-bold text-4xl text-wrap">
+                {" "}
+                Our Collections
+              </div>
+              <p className="font-sans font-medium text-lg text-wrap text-text-gray pt-5  max-w-[550px]">
+                Introducing our Coffee Collection,a selection of unique coffees
+                from different roast types and origins, expertly roasted in
+                small batches and shipped fresh weekly.
+              </p>
+              <div className="pt-5 font-sans font-medium  text-nowrap">
+                <label className=" p-3 bg-color-gray rounded-lg">All Products</label>
+                <label className="pl-8">Available Now</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
