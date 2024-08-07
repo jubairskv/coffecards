@@ -15,6 +15,11 @@ const MainContainer = () => {
     setData(json);
     console.log(json);
   };
+
+  let datas = data[0];
+
+  if (!datas) return "null";
+
   return (
     <div>
       <div>
@@ -35,8 +40,19 @@ const MainContainer = () => {
                 small batches and shipped fresh weekly.
               </p>
               <div className="pt-5 font-sans font-medium  text-nowrap">
-                <label className=" p-3 bg-color-gray rounded-lg">All Products</label>
+                <label className=" p-3 bg-color-gray rounded-lg">
+                  All Products
+                </label>
                 <label className="pl-8">Available Now</label>
+              </div>
+              <div className="pt-20">
+                <img src={datas.image} alt="api-data" className="rounded-xl" />
+                <p>{datas.popular ? "Popular" : ""}</p>
+                <h3>{datas.name}</h3>
+                <p>Price: {datas.price}</p>
+                <p>
+                  Rating: {datas.rating} ({datas.votes} Votes)
+                </p>
               </div>
             </div>
           </div>
