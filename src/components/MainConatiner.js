@@ -52,17 +52,20 @@ const MainContainer = () => {
                     alt="api-data"
                     className="rounded-xl"
                   />
-                  <p className="absolute top-0 left-0 text-black bg-yellow-300 p-1 m-2 font-sans font-medium text-sm  rounded-3xl">
+                  <p className="absolute top-0 left-0 text-black bg-yellow-300 p-1 m-2 font-sans font-semibold text-sm rounded-3xl">
                     {datas.popular ? "Popular" : ""}
                   </p>
                 </div>
                 <div className="flex justify-between pt-3">
-                  <h3>{datas.name}</h3>
-                  <p className="bg-green-500 rounded-md">{datas.price}</p>
+                  <h3 className="font-sans text-lg font-bold">{datas.name}</h3>
+                  <p className="bg-color-green rounded-md font-sans text-md text-black font-semibold p-1">{datas.price}</p>
                 </div>
+                <div>
                 <p className="flex font-sans text-md font-medium">
                   {datas.rating} ({datas.votes} Votes)
                 </p>
+                <h3 className="font-sans font-semibold text-sm text-color-red">{datas.available ? "":"Sold out"}</h3>
+                </div>
               </div>
             </div>
           </div>

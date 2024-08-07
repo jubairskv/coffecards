@@ -9,8 +9,8 @@ module.exports = {
         "text-gray": "#6F757C",
         "color-gray": "#6F757C",
         "color-green": "#BEE3CC",
-        "color-green": "#F6C768",
-        "color-green": "#ED735D",
+        "color-yellow": "#F6C768",
+        "color-red": "#ED735D",
       },
       screens: {
         x: "350px",
