@@ -31,8 +31,8 @@ const MainContainer = () => {
           alt="bg_img"
         />
         <div className=" absolute top-[10%] left-[5%] sm:shrink-0">
-          <div className="w-[500px] h-[65rem] xss:w-[250px] x:w-[300px] xs:w-[420px] sm:w-[560px] md:w-[700px] lg:w-[60rem] xl:w-[75rem] 2xl:w-[95rem]  text-center rounded-xl text-white p-20 bg-custom-black">
-            <div className=" flex flex-col justify-center items-center">
+          <div className="w-[500px] h-[65rem] xss:w-[250px] xss:h-[160rem] x:w-[300px] x:h-[160rem] xs:w-[420px]  xs:h-[160rem] sm:w-[560px] sm:h-[160rem] md:w-[700px] md:h-[160rem] lg:w-[60rem] lg:h-[160rem] xl:w-[75rem] xl:h-[160rem] 2xl:w-[95rem] 2xl:h-[60rem]  text-center rounded-xl text-white p-20 bg-custom-black">
+            <div className="flex flex-col justify-center items-center">
               <div className="font-sans font-bold text-4xl text-wrap">
                 Our Collections
               </div>
@@ -47,7 +47,7 @@ const MainContainer = () => {
                 </label>
                 <label className="pl-8">Available Now</label>
               </div>
-              <div className=" grid grid-cols-3 gap-12 p-4 ">
+              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-0 p-4 ">
                 {data.map((item) => (
                   <div className="pt-20">
                     <div className="relative">
@@ -69,16 +69,25 @@ const MainContainer = () => {
                       </p>
                     </div>
                     <div className="flex pt-2">
-                      <img
-                        src={star}
-                        alt="Rating Icon"
-                        className=" w-6 h-6 mr-2"
-                      />
+                      {item.votes ? (
+                        <img
+                          src={star}
+                          alt="Rating Icon"
+                          className=" w-6 h-6 mr-2"
+                        />
+                      ) : (
+                        <img
+                          src={svg}
+                          alt="Rating Icon"
+                          className=" w-6 h-6 mr-2"
+                        />
+                      )}
+
                       <p className="flex font-sans text-md font-medium">
                         {item.rating}
                       </p>
-                      <p className="flex font-sans text-md font-semibold pl-2 text-color-gray">
-                        ({item.votes} Votes)
+                      <p className="flex font-sans text-md font-semibold pl-1 text-color-gray">
+                        {item.votes ? "votes" : "No ratings"}
                       </p>
                       <h3 className="font-sans font-semibold text-md text-color-red ml-10 mt-1 ">
                         {item.available ? "" : "Sold out"}
